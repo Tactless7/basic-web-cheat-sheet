@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <title>Basic Web Cheat Sheet</title>
+</head>
+<body>
+  <h1 class="ui header">Feuille récap HTML/CSS/JS</h1>
+  <div class="ui three column grid container">
+
+    <!-- HTML -->
+    <h2 class="ui header">HTML</h2>
+    <!-- DIV -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;div&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          La balise div est un block pouvant contenir tout type de contenu : autres balises, textes, images, etc.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;div&gt;
+          <br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &lt;p&gt;Bonjour&lt;/p&gt;
+          <br/>
+          &lt;/div&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;div&gt;
+          <br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &lt;p&gt;Bonjour&lt;/p&gt;
+          <br/>
+          &lt;/div&gt;
+        </div>
+      </div>
+    </div>
+    <!-- P -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;p&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          La balise p a été créé pour représenter des paragraphes, elle a naturellement des marges en haut et en bas.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;p&gt;Je suis un paragraphe de texte&lt;/p&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;p&gt;Je suis un paragraphe de texte&lt;/p&gt;
+        </div>
+      </div>
+    </div>
+    <!-- A -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;a&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          La balise a est utilisée pour les hyperliens. Elle prend au minimum un attribut href.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;p&gt;Voici un &lt;a href=&quot;/chemin/vers/ma/page&quot;&gt;lien&lt;/a&gt;.&lt;/p&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;p&gt;Voici un &lt;a href=&quot;/chemin/vers/ma/page&quot;&gt;lien&lt;/a&gt;.&lt;/p&gt;
+        </div>
+      </div>
+    </div>
+    <!-- IMG -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;img&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          Balise utilisée pour déclarer une image. Elle prend au minimum l'attribut src , et il est de bon goût d'utiliser l'attribut alt pour les lecteurs d'écrans.
+          Elle est auto-fermante.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;a src=&quot;/chemin/vers/mon/image&quot; alt=&quot;Description de l'image&quot; /&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;a src=&quot;/chemin/vers/mon/image&quot; alt=&quot;Description de l'image&quot; /&gt;
+        </div>
+      </div>
+    </div>
+    <!-- UL/OL -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;ul&gt; / &lt;ol&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          Ce sont les balises pour créer des listes. &lt;ul&gt; crée une liste non ordonnée (liste à puces), alors que &lt;ol&gt; crée une liste ordonnée (liste numérotée).
+          Elles contiennent des balises &lt;li&gt; .
+        </div>
+      </div>
+      <div class="height wide column">
+        <!-- TODO DESIGN -->
+        <div class="row">
+          <div class="three wide column">
+            &lt;ol&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pr&eacute;chauffer le four&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pr&eacute;parer les cookies&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Enfourner la plaque de cookies&lt;/li&gt; <br>
+            &lt;/ol&gt;
+          </div>
+          <div class="three wide column">
+            <ol>
+              <li>Préchauffer le four</li>
+              <li>Préparer les cookies</li>
+              <li>Enfourner la plaque de cookies</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="three wide column">
+            &lt;ul&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pain&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Beurre demi-sel&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Lait&lt;/li&gt; <br>
+            &lt;/ul&gt;
+          </div>
+          <div class="three wide column">
+            <ul>
+              <li>Pain</li>
+              <li>Beurre demi-sel</li>
+              <li>Lait</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- BUTTON -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;button&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          Crée un bouton (utilisé pour les actions utilisateurs)
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;button&gt;Clique-moi&lt;/button&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          <button>Clique-moi</button>
+        </div>
+      </div>
+    </div>
+    <!-- INPUT -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;input&gt;
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div>
+          Cette balise crée un champ de texte (mais aussi nombre, mot de passe, zone de texte).
+          On lui donne un type.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          &lt;input type=&quot;text&quot; placeholder=&quot;Entrez du texte&quot;&gt;
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          <input type="text" placeholder="Entrez du texte">
+        </div>
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <!-- CSS -->
+    <h2 class="ui header">CSS</h2>
+    <div class="row">
+      
+    </div>
+
+    <div class="ui divider"></div>
+
+    <!-- JS -->
+    <h2 class="ui header">JS</h2>
+    <div class="row">
+
+    </div>
+  </div>
+  
+</body>
+</html>
