@@ -347,7 +347,7 @@
         </button>
       </div>
     </div>
-    <!-- Chaînage -->
+    <!-- CHAINAGE -->
     <div class="row">
       <div class="two wide column">
         <div>
@@ -562,7 +562,80 @@
         </div>
       </div>
     </div>
+    <!-- FONT-WEIGHT -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          font-weight
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Pour choisir la grosseur de la police
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;p&gt;Cette info est &lt;span&gt;très&lt;/span&gt; importante.&lt;/p&gt;<br>
+          <br>
+          <br>
     
+          span {
+          <br>
+          &nbsp;&nbsp;font-weight: bold;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div style="margin: 20px 50px;">
+          <p>Cette info est <span style="font-weight: bold;">très</span> importante.</p>
+        </div>
+      </div>
+    </div>
+    <!-- FONT-WEIGHT -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          flexbox
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Les flexbox permettent de positionner les éléments en plaçant les proriétés flex sur le container (l'élément parent).
+          On peut ainsi disposer les éléments enfants comme bon nous semble.
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide plus complet des flexbox</a>
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;div class=&quot;parent&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;enfant&quot;&gt;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;enfant&quot;&gt;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;enfant&quot;&gt;&lt;/div&gt;<br>
+          &lt;/div&gt;
+          <br>
+          <br>
+    
+          .parent {
+          <br>
+          &nbsp;&nbsp;display: flex;
+          &nbsp;&nbsp;justify-content: space-around;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div class="parent" style="display: flex; justify-content: space-around; margin-top: 30px;">
+          <div class="enfant" style="height: 30px; width: 30px; background: grey;"></div>
+          <div class="enfant" style="height: 30px; width: 30px; background: grey;"></div>
+          <div class="enfant" style="height: 30px; width: 30px; background: grey;"></div>
+        </div>
+
+      </div>
+    </div>
 
     
     <div class="ui divider"></div>
