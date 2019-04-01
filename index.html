@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Basic Web Cheat Sheet</title>
 </head>
 <body>
-  <h1 class="ui header">Feuille récap HTML/CSS/JS</h1>
+  <h1 class="ui centered header">Feuille récap HTML/CSS/JS</h1>
   <div class="ui three column grid container">
 
     <!-- HTML -->
@@ -20,12 +21,12 @@
           &lt;div&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           La balise div est un block pouvant contenir tout type de contenu : autres balises, textes, images, etc.
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;div&gt;
           <br/>
@@ -35,7 +36,7 @@
           &lt;/div&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <div>
             <p>Bonjour</p>
@@ -50,17 +51,17 @@
           &lt;p&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           La balise p a été créé pour représenter des paragraphes, elle a naturellement des marges en haut et en bas.
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;p&gt;Je suis un paragraphe de texte&lt;/p&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <p>Je suis un paragraphe de texte</p>
         </div>
@@ -73,17 +74,17 @@
           &lt;a&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           La balise a est utilisée pour les hyperliens. Elle prend au minimum un attribut href.
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;p&gt;Voici un &lt;a href=&quot;/chemin/vers/ma/page&quot;&gt;lien&lt;/a&gt;.&lt;/p&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <p>Voici un <a href="http://www.google.fr">lien</a>.</p>
         </div>
@@ -96,18 +97,18 @@
           &lt;img&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           Balise utilisée pour déclarer une image. Elle prend au minimum l'attribut src , et il est de bon goût d'utiliser l'attribut alt pour les lecteurs d'écrans.
           Elle est auto-fermante.
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;img src=&quot;/chemin/vers/mon/image&quot; alt=&quot;Description de l'image&quot; /&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <img src="https://www.programmation-facile.com/wp-content/uploads/2014/03/html5.png" alt="Description de l'image" height="100" />
         </div>
@@ -120,49 +121,51 @@
           &lt;ul&gt; / &lt;ol&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           Ce sont les balises pour créer des listes. &lt;ul&gt; crée une liste non ordonnée (liste à puces), alors que &lt;ol&gt; crée une liste ordonnée (liste numérotée).
           Elles contiennent des balises &lt;li&gt; .
         </div>
       </div>
-      <div class="height wide column">
-        <!-- TODO DESIGN -->
-        <div class="row">
-          <div class="ui message">
-            &lt;ol&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pr&eacute;chauffer le four&lt;/li&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pr&eacute;parer les cookies&lt;/li&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Enfourner la plaque de cookies&lt;/li&gt; <br>
-            &lt;/ol&gt;
-          </div>
-          <div class="three wide column">
-            <ol>
-              <li>Préchauffer le four</li>
-              <li>Préparer les cookies</li>
-              <li>Enfourner la plaque de cookies</li>
-            </ol>
-          </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;ol&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Pr&eacute;chauffer le five&lt;/li&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Pr&eacute;parer les cookies&lt;/li&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Enfourner la plaque de cookies&lt;/li&gt; <br>
+          &lt;/ol&gt;
         </div>
-        <div class="row">
-          <div class="ui message">
-            &lt;ul&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pain&lt;/li&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Beurre demi-sel&lt;/li&gt; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Lait&lt;/li&gt; <br>
-            &lt;/ul&gt;
-          </div>
-          <div class="three wide column">
-            <ul>
-              <li>Pain</li>
-              <li>Beurre demi-sel</li>
-              <li>Lait</li>
-            </ul>
-          </div>
-        </div>
-
+      </div>
+      <div class="five wide column">
+        <ol>
+          <li>Préchauffer le five</li>
+          <li>Préparer les cookies</li>
+          <li>Enfourner la plaque de cookies</li>
+        </ol>
       </div>
     </div>
+    <div class="row">
+      <div class="six wide column">
+        &nbsp;
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;ul&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Pain&lt;/li&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Beurre demi-sel&lt;/li&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;  &lt;li&gt;Lait&lt;/li&gt; <br>
+          &lt;/ul&gt;
+        </div>
+      </div>
+      <div class="five wide column">
+        <ul>
+          <li>Pain</li>
+          <li>Beurre demi-sel</li>
+          <li>Lait</li>
+        </ul>
+      </div>
+    </div>
+
     <!-- BUTTON -->
     <div class="row">
       <div class="one wide column">
@@ -170,17 +173,17 @@
           &lt;button&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           Crée un bouton (utilisé pour les actions utilisateurs)
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;button&gt;Clique-moi&lt;/button&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <button>Clique-moi</button>
         </div>
@@ -193,20 +196,48 @@
           &lt;input&gt;
         </div>
       </div>
-      <div class="seven wide column">
+      <div class="five wide column">
         <div>
           Cette balise crée un champ de texte (mais aussi nombre, mot de passe, zone de texte).
           On lui donne un type.
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div class="ui message">
           &lt;input type=&quot;text&quot; placeholder=&quot;Entrez du texte&quot;&gt;
         </div>
       </div>
-      <div class="four wide column">
+      <div class="five wide column">
         <div>
           <input type="text" placeholder="Entrez du texte">
+        </div>
+      </div>
+    </div>
+    <!-- TITRES -->
+    <div class="row">
+      <div class="one wide column">
+        <div>
+          &lt;h1&gt;
+        </div>
+      </div>
+      <div class="five wide column">
+        <div>
+          Les balises titres ont 6 niveaux différents &lt;h1&gt; à &lt;h6&gt;. 
+          On les utilise pour signifier que le texte contenu entre les balises correspond à un titre
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;h1&gt;Ceci est un titre de niveau 1&lt;h2&gt; <br><br>
+          &lt;h2&gt;Ceci est un titre de niveau 2&lt;h2&gt; <br><br>
+          &lt;h3&gt;Ceci est un titre de niveau 3&lt;h3&gt; <br><br>
+        </div>
+      </div>
+      <div class="five wide column">
+        <div>
+          <h1>Ceci est un titre de niveau 1</h1>
+          <h2>Ceci est un titre de niveau 2</h2>
+          <h3>Ceci est un titre de niveau 3</h3>
         </div>
       </div>
     </div>
@@ -214,15 +245,332 @@
     <div class="ui divider"></div>
 
     <!-- CSS -->
-    <h2 class="ui header">CSS</h2>
     <div class="row">
-      
+      <h2 class="ui header">CSS</h2>
+    </div>
+    <div class="row">
+      <h4 class="ui header">Les sélecteurs CSS</h4>
+    </div>
+    <div class="row">
+      <p>Pour sélectionner les balises à styliser avec du CSS, on utilise des sélecteurs CSS.</p>
+    </div>
+    <!-- BALISES -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          balise
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          On peut sélectionner les balises via leur nom. Cela sélectionnera toutes les balises de ce type.
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;div &gt;Un bloc informatif&lt;/div&gt;
+          <br>
+          <br>
+
+          div {
+          <br>
+          &nbsp;&nbsp;color: red;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+        <div style="color: red;border: solid black 1px;padding: 30px;margin: 10px;">
+          Un bloc informatif
+        </div>
+      </div>
+    </div>
+    <!-- CLASSES -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          .class
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          On peut ajouter l'attribut class="" à la balise, voire à plusieurs balises de même type ou de types différents.
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;div class=&quot;infos&quot;&gt;Des infos&lt;/div&gt;
+          <br>
+          <br>
+
+          .infos {
+          <br>
+          &nbsp;&nbsp;color: red;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+        <div style="color: red;border: solid black 1px;padding: 30px;margin: 10px;">
+          Des infos
+        </div>
+      </div>
+    </div>
+    <!-- ID -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          #id
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          On peut ajouter l'attribut id="" à la balise. Il doit être unique.
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;button id=&quot;bouton-sauver&quot;&gt;Enregistrer les infos&lt;/button&gt;
+          <br>
+          <br>
+
+          #bouton-sauver {
+          <br>
+          &nbsp;&nbsp;color: grey;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+        <button style="color: grey;padding: 5px;margin: 30px;">
+          Enregistrer les infos
+        </button>
+      </div>
+    </div>
+    <!-- Chaînage -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          balise .class
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Il est possible de chaîner les sélecteurs CSS pour préciser la ou les balises visée(s).
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;p class=&quot;text&quot;&gt;Un chouette texte.&lt;/p&gt; <br>
+          &lt;div&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;text&quot;&gt;Un texte tr&egrave;s sympa.&lt;/p&gt; <br>
+          &lt;/div&gt;
+          <br>
+          <br>
+
+          div .text {
+          <br>
+          &nbsp;&nbsp;color: red;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+        
+        <div style="border:black solid 1px;padding: 10px;margin: 20px;">
+          <p class="text">Un chouette texte.</p>
+          <div>
+            <p class="text" style="color: red">Un texte très sympa.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div class="row">
+      <h4 class="ui header">Les propriétés CSS</h4>
+    </div>
+
+    <!-- WIDTH ET HEIGHT -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          width / height
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Indique les largeurs (width) et hauteurs (height) souhaitées pour la balise sélectionnée.
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;div&gt;&lt;/div&gt;
+          <br>
+          <br>
+    
+          div {
+          <br>
+          &nbsp;&nbsp;width: 100px;
+          &nbsp;&nbsp;height: 50px;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div style="width: 100px;height: 50px;background-color: grey;margin: 20px 50px;">
+        </div>
+      </div>
+    </div>
+    <!-- MARGINS ET PADDING -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          margin / padding
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          On peut mettre des marges extérieures (margin) ou intérieures (padding) sur chaque élément.
+          Elles sont divisées en 4 : top, right, bottom, left.
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;p class=&quot;text&quot;&gt;Un chouette texte.&lt;/p&gt; <br>
+          &lt;div&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;text&quot;&gt;Un texte tr&egrave;s sympa.&lt;/p&gt; <br>
+          &lt;/div&gt;
+          <br>
+          <br>
+    
+          div .text {
+          <br>
+          &nbsp;&nbsp;color: red;
+          &nbsp;&nbsp;margin-top: 50px;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div style="border:black solid 1px;padding: 10px;margin: 10px;">
+          <p class="text">Un chouette texte.</p>
+          <div>
+            <p class="text" style="color: red;margin-top: 50px;">Un texte très sympa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TEXT-ALIGN -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          text-align
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Pour aligner le texte : left, center, right
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;h1&gt;Titre&lt;/h1&gt;
+          <br>
+          <br>
+    
+          h1 {
+          <br>
+          &nbsp;&nbsp;text-align: right;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div>
+          <h1 style="text-align: right;">Titre</h1>
+        </div>
+      </div>
+    </div>
+    <!-- BORDER -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          border
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Pour créer un contour à la balise.
+          On lui indique la largeur (en px par exemple), la couleur, et le type de contour (solid, dashed, etc.)
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;h1&gt;Titre&lt;/h1&gt;
+          <br>
+          <br>
+    
+          h1 {
+          <br>
+          &nbsp;&nbsp;text-align: right;
+          &nbsp;&nbsp;border: solid 1px red;
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div>
+          <h1 style="border:solid 1px red;text-align: right;">Titre</h1>
+        </div>
+      </div>
+    </div>
+    <!-- FONT-SIZE -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          font-size
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Pour choisir la taille de la police
+        </div>
+      </div>
+      <div class="five wide column">
+        <div class="ui message">
+          &lt;h2&gt;Titre de niveau 2&lt;/h2&gt;<br>
+          &lt;h1&gt;Petit titre de niveau 1&lt;/h1&gt;
+          <br>
+          <br>
+    
+          h1 {
+          <br>
+          &nbsp;&nbsp;font-size: 12px
+          <br>
+          }
+        </div>
+      </div>
+      <div class="five wide column">
+    
+        <div>
+          <h2 style="margin: 20px 50px">Titre de niveau 2</h2>
+          <h1 style="font-size: 12px;margin: 20px 50px">Petit titre de niveau 1</h1>
+        </div>
+      </div>
+    </div>
+    
+
+    
     <div class="ui divider"></div>
 
     <!-- JS -->
-    <h2 class="ui header">JS</h2>
+    <div class="row">
+      <h2 class="ui header">JS</h2>
+    </div>
     <div class="row">
 
     </div>
