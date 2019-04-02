@@ -130,7 +130,7 @@
       <div class="five wide column">
         <div class="ui message">
           &lt;ol&gt; <br>
-          &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Pr&eacute;chauffer le five&lt;/li&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Pr&eacute;chauffer le four&lt;/li&gt; <br>
           &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Pr&eacute;parer les cookies&lt;/li&gt; <br>
           &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Enfourner la plaque de cookies&lt;/li&gt; <br>
           &lt;/ol&gt;
@@ -138,7 +138,7 @@
       </div>
       <div class="five wide column">
         <ol>
-          <li>Préchauffer le five</li>
+          <li>Préchauffer le four</li>
           <li>Préparer les cookies</li>
           <li>Enfourner la plaque de cookies</li>
         </ol>
@@ -644,8 +644,160 @@
     <div class="row">
       <h2 class="ui header">JS</h2>
     </div>
+    <!-- VARIABLE -->
     <div class="row">
+      <div class="two wide column">
+        <div>
+          variable
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Une variable contient une valeur.<br><br>
+          Il existe différents type: <em>chaîne</em></em> de caractère ( "coucou" ou 'coucou' ), <em>nombre</em> ( 5 ), <em>tableau</em> ( ["coucou", 5, "avion"] ), <em>objet</em> ( { nom: "Blier", prenom: "Juliane", age: 28 } ).<br><br>
+          Pour utiliser une variable, on la <em>déclare</em>, puis on peut lui <em>assigner</em> une valeur. Ou alors on la déclare en lui assignant directement une valeur.<br>
+          <br><br>
+          Pour accéder à une valeur dans un tableau on utilise son <em>index</em> entre [ ]. L'index commence toujours à 0.
+          <br>
+          Pour accéder à une valeur dans un objet, on utilise le nom de l'objet et la <em>clé</em> de la valeur sous la forme : objet.cle
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          let prenom;<br>
+          prenom = "Juliane";<br><br>
+          let age = 28;<br><br>
+          let liste = ["pain", "lait", "oeufs"];<br><br>
+          let identite = {<br>
+          &nbsp;&nbsp;prenom: "Juliane",<br>
+          &nbsp;&nbsp;prenomage: 28,<br>
+          &nbsp;&nbsp;signes: ["lunettes"]<br>
+          }
+          <br>
+          <br>
 
+          console.log( prenom ) <span style="color: grey;">//Juliane</span><br>
+          console.log( liste[0] ) <span style="color: grey;">//lait</span><br>
+          console.log( identite.age ) <span style="color: grey;">//28</span>
+        </div>
+      </div>
+    </div>
+    <!-- FONCTION -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          fonction
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Une fonction est un morceau de code que l'on crée pour réutiliser les instructions. Elle peut avoir <em>arguments</em> (aussi appelés paramètres) qu'on lui passe.<br><br>
+          On doit la <em>déclarer</em> au préalable pour pouvoir l'utiliser. Ensuite on peut l'<em>appeler</em> en lui passant des arguments si elle en nécessite.<br><br>
+          Elle peut retourner (renvoyer) une valeur grâce au mot-clé <em>return</em>, ou juste appliquer une série d'instructions.
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          function addition (arg1, arg2) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          let resultat = arg1 + arg2;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          return resultat; <br>
+          }
+          <br>
+          <br>
+          let total = addition(4, 6);<br>
+          console.log( total ) <span style="color: grey;">//10</span>
+        </div>
+      </div>
+    </div>
+    <!-- GET ELEMENT -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          getElementById
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          On peut sélectionner une balise HTML en javascript, en sélectionnant son id grâce à la <em>méthode</em> (une sorte de fonction) <em>getElementById</em>. <br>
+          Il faut alors indiquer dans les parenthèses l'id à sélectionner, et ce, entre " ".
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          &lt;div id="mon-id"&gt;Une div que je veux sélectionner.&lt;/div&gt;
+          <br><br>
+          let element = document.getElementById("mon-id")<br>
+        </div>
+      </div>
+    </div>
+    <!-- INNERHTML -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          .innerHTML
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Il est possible d'ajouter du texte et du HTML dynamiquement grâce à javascript. <br>
+          Pour ce faire, il faut sélectionner la balise html et modifier le contenu de cette balise avec la méthode innerHTML.<br>
+          Le contenu de cette balise sera remplacée
+        </div>
+      </div>
+      <div class="four wide column">
+        <div class="ui message">
+          &lt;div id="mon-id"&gt;Une div que je veux sélectionner.&lt;/div&gt;
+          <br><br>
+          let element = document.getElementById("mon-id")<br>
+          element.innerHTML = "Bonjour"
+        </div>
+      </div>
+      <div class="two wide column">
+        <div style="margin: 30px 5px;">
+          <div id="remplacer" style="background: grey;padding: 2px; margin-bottom: 10px;">Une div que je veux sélectionner.</div>
+          <button onclick="remplacer()">Lancer</button>
+          <br><br>
+
+          <script>
+            function remplacer() {
+              let element = document.getElementById("remplacer");
+              element.innerHTML = "Bonjour";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- ONCLICK -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          événements
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          La dimension dynamique de javascript est en partie dûe aux événements. <br>
+          On indique que l'on veut <em>écouter</em> un événement sur une balise en particulier, par exemple le clic. <br>
+          Ensuite on indique la fonction à éxecuter lorsque l'événement est capté.
+        </div>
+      </div>
+      <div class="four wide column">
+        <div class="ui message">
+          &lt;button id="mon-id" onclick="hello()"&gt; Clique-moi &lt;/button&gt;
+          <br><br>
+          function hello() {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          alert('Coucou'); <br>
+          }
+        </div>
+      </div>
+      <div class="two wide column">
+        <div style="margin: 30px 0">
+          <button onclick="alert('Coucou')">Clique-moi</button>
+        </div>
+      </div>
     </div>
   </div>
   
