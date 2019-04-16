@@ -877,6 +877,40 @@
     <div class="row">
       <div class="two wide column">
         <div>
+          data
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          On peut utiliser la donnée directement dans le template HTML grâce aux {{ }}<br>
+          Il faut que la donnée soit déclarée dans la data de notre composant. Vue, fait directement le lien entre les deux.
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;div&gt;{{ nomDuResto }}&lt;/div&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;data(){<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nomDuResto: "Bistrot Régent"<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;}<br>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- V-ON -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
           v-on
         </div>
       </div>
@@ -902,6 +936,7 @@
           &nbsp;&nbsp;&nbsp;&nbsp;ajouterTrois(nombre) {<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nombre + 3;<br>
           &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;}<br>
           }
         </div>
       </div>
@@ -938,6 +973,8 @@
           &nbsp;&nbsp;&nbsp;&nbsp;return {<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nomDuResto: 'Bistrot Régent' <br>
           &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;}<br>
+          }
         </div>
       </div>
     </div>
@@ -969,6 +1006,7 @@
           &nbsp;&nbsp;mounted() {<br>
           &nbsp;&nbsp;&nbsp;&nbsp;displayText()<br>
           &nbsp;&nbsp;}<br>
+          }
         </div>
       </div>
     </div>
