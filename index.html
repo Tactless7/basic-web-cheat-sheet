@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
   <link rel="stylesheet" href="./style.css">
   <title>Basic Web Cheat Sheet</title>
 </head>
@@ -799,6 +799,180 @@
         </div>
       </div>
     </div>
+
+    <div class="ui divider"></div>
+
+    <!-- VUEJS -->
+    <div class="row">
+      <h2 class="ui header">Vue.js</h2>
+    </div>
+
+    <!-- IMPORT -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          component
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Pour déclarer un composant, il faut: 
+          <ul>
+            <li>l'importer</li>
+            <li>lui donner un nom</li>
+            <li>l'utiliser dans le composant parent</li>
+          </ul>
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans la balise script</em><br><br>
+          import MonComposant from './MonComposant.vue';<br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant"<br>
+          }<br><br><br>
+
+          <em>Dans le composant parent</em><br><br>
+          &lt;mon-composant&gt;&lt;/mon-composant&gt;
+
+        </div>
+      </div>
+    </div>
+
+    <!-- V-IF -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          v-if
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Le v-if permet d'afficher ou non la balise HTML sur laquelle il est placé. <br>
+          On lui passe une donnée contenue dans la data() du composant.
+          Celle-ci est évaluée à <em>true</em> (vrai) ou <em>false</em> (faux).
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;mon-composant v-if="afficher"&gt;&lt;/mon-composant&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;data() {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;afficher: true <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- V-ON -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          v-on
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Le v-on permet d'écouter un événement grâce à Vuejs.<br>
+          On lui indique le <em>type</em> d'événement et la <em>fonction</em> à appeler.
+          Lorsque l'événement est déclenché, il lance la fonction indiquée.
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;mon-composant v-on:click="ajouterTrois(6)"&gt;&lt;/mon-composant&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;methods: {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;ajouterTrois(nombre) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nombre + 3;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- PROPS -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          props
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          On peut passer des informations à un composant via des props.<br>
+          On crée un attribut nommé comme on le souhaite, et on lui indique le texte voulu.<br>
+          Pour passer une donnée de manière dynamique, on ajoute v-bind: devant la props et on lui passe la bonne donnée.<br><br>
+          Le v-bind sert à indiquer que l'attribut est dynamique.
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;mon-composant telephone="05 90 90 90 45" v-bind:nom="nomDuResto"&gt;&lt;/mon-composant&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;props: ['telephone'],<br>
+          &nbsp;&nbsp;data() {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nomDuResto: 'Bistrot Régent' <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOUNTED -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          mounted
+        </div>
+      </div>
+      <div class="height wide column">
+        <div>
+          Si on veut agir au moment où le HTML est chargé, on utilise la fonction mounted(). <br>
+          On l'appelle et on indique le code que l'on veut exécuter à l'intérieur.
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;mon-composant&gt;&lt;/mon-composant&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;mounted() {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;displayText()<br>
+          &nbsp;&nbsp;}<br>
+        </div>
+      </div>
+    </div>
+
   </div>
   
 </body>
