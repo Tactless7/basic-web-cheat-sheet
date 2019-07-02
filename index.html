@@ -906,7 +906,7 @@
       </div>
     </div>
 
-    <!-- V-ON -->
+    <!-- DATA-->
     <div class="row">
       <div class="two wide column">
         <div>
@@ -971,6 +971,50 @@
           &nbsp;&nbsp;&nbsp;&nbsp;}<br>
           &nbsp;&nbsp;}<br>
           }
+        </div>
+      </div>
+    </div>
+
+    <!-- V-FOR -->
+    <div class="row">
+      <div class="two wide column">
+        <div>
+          v-for
+        </div>
+      </div>
+      <div class="four wide column">
+        <div>
+          Le v-for est une boucle permettant d'afficher tous les éléments d'une liste<br>
+          Pour chaque tour de boucle, on affichera l'élément html correspondant.
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div class="ui message">
+          <em>Dans le template HTML</em><br><br>
+          &lt;mon-composant&gt;<br>
+          &nbsp;&nbsp;&lt;p v-for="resto in liste"&gt;{{ resto }}&lt;/p&gt;
+          <br>
+          &lt;/mon-composant&gt;
+
+          <br><br>
+
+          <em>Dans la balise script</em>
+          <br><br>
+          export default {<br>
+          &nbsp;&nbsp;name: "MonComposant",<br>
+          &nbsp;&nbsp;data(){<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liste: ["Bistrot Régent", "Le Tranchoir", "La Belle verte"]<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;}<br>
+          }
+        </div>
+      </div>
+      <div class="three wide column">
+        <div class="ui message">
+          <p>Bistrot Régent</p>
+          <p>Le Tranchoir</p>
+          <p>La Belle verte</p>
         </div>
       </div>
     </div>
